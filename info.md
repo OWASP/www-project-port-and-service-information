@@ -1,17 +1,9 @@
 ### Port and Service Information Information
-* [Incubator Project](#)
-* [Type of Project](#)
-* [Version 0.0.0](#)
-* [Builder](#)
-* [Breaker](#)
+Nmap Script to extend the functionality of scanning by providing more information about ports,services,exploits and fuzzing.
 
-### Downloads or Social Links
-* [Download](#)
-* [Meetup](#)
 
 ### Code Repository
-* [repo](#)
+* [repo](https://github.com/OWASP/www-project-port-and-service-information)
 
-### Change Log
-* [changes](#)
+
 
