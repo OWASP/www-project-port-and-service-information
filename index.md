@@ -2,21 +2,29 @@
 
 layout: col-sidebar
 title: OWASP Port and Service Information
-tags: example-tag
+tags: nmap script, scan sites,exploit detection, fuzzing, service enumeration
 level: 2
 type: 
 pitch: Nmap Script to extend the functionality of scanning by providing more information about ports,services,exploits and fuzzing.
 
 ---
+## Description
+This project is basically working around a custom nmap script. This will be helpful for initial enumeration phases when the attacker needs more information about already available information about open ports,services,exploits and other details. The source of the information will be a readily available data file which will help users to do initial enumeration much quickly.
 
-This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
+### Example: 
+1. Nmap detects port 80 running Apache Server
+2. Script gets information about the port
+3. It checks the apache version and tries to find vulnerabilities available on internet(including but not limited to ExploitDb)
+4. It loads the page and checks it contents to detect what stack the website is running and what CMS is it using,
+5. It will use the  new found information and execute Step 3
+6. If user selected fuzzing options, such as directory fuzzing or subdomain fuzzing, it will automatically launch fuzzers
+7. Similarly, it will try to enumerate FTP port, SMTP port and other ports found on basis of enumeration and tools available. Data source will be the central Data file.
+7. For any new findings, it will run Steps 3-5 (depending on the argument set by the user)
 
-layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
-
-title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
-
-tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
-
-level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Flagship)
-
-type: code, tool, documentation, or other
+## Project Roadmap
+1. The project will start with creation of a small and central database.
+2. Script creation for Port Information
+3. Exploit detection base don enumeration
+4. Service Detection
+5. Service Detailed Enumeration
+6. Fuzzers
