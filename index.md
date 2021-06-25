@@ -24,7 +24,7 @@ This project is basically working around a custom nmap script. This will be help
 ## Project Roadmap
 1. The project will start with creation of a small and central database.
 2. Script creation for Port Information
-3. Exploit detection base don enumeration
+3. Exploit detection based on enumeration
 4. Service Detection
 5. Service Detailed Enumeration
 6. Fuzzers
