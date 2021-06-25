@@ -5,7 +5,7 @@ title: OWASP Port and Service Information
 tags: example-tag
 level: 2
 type: 
-pitch: A very brief, one-line description of your project
+pitch: Nmap Script to extend the functionality of scanning by providing more information about ports,services,exploits and fuzzing.
 
 ---
 
